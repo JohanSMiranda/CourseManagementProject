@@ -1,0 +1,19 @@
+<header th:fragment="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" th:href="@{/courses}">Gestion de cursos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+            <ul class="navbar-nav mr-auto mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/courses}">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/courses/new}">Agregar curso</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
